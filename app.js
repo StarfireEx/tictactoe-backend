@@ -5,10 +5,10 @@ const socketIo = require("socket.io");
 const { createRoom, socketHandler } = require("./controller");
 
 const app = express();
-const port = 5000;
+const port = 5000||process.env.PORT;
 
 const corsConfig = {
-	origin: "http://localhost:3000",
+	origin: "https://tictactoemain.vercel.app/",
 	credentials: true,
 	sameSite: "None",
 	secure: true,
