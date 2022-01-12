@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT||5000;
 
 const corsConfig = {
-	origin: "https://tictactoemain.vercel.app/",
+	origin: "https://tictactoemain.vercel.app",
 	credentials: true,
 	sameSite: "None",
 	secure: true,
